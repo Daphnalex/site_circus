@@ -1,0 +1,407 @@
+html{
+	background: black;
+	z-index:1;
+	color: white;
+}
+body{
+	background-color:black;
+}
+
+#ligne2 > .bloc{
+	margin: 0px 10px 0px 10px;
+}
+.menu {
+		background: #000;
+		display: inline-block;
+		position: relative;
+		-webkit-transition: background .3s ease;
+		transition: background .3s ease;
+		font-size:18px;
+		float: right;
+		margin:  -60px 0px auto auto;
+		text-align: center;
+}
+.menu > a{
+		background-color: black;
+		border-style: solid; 
+		border-width:1px;
+		border-color: white;
+		padding: 5px 10px 5px 10px;
+		font-family: Arial;
+		font-size: 18px;
+		color: white;
+}
+.tickercontainer { /* the outer div with the black border */
+	border: 1px solid #000;
+	background: #000; 
+	width: 100%; 
+	height: 35px; 
+	margin: 0; 
+	padding: 0;
+	overflow: hidden; 
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+	position: relative;
+	left: 10px;
+	top: 8px;
+	width: 1100px;
+	overflow: hidden;
+	height:30px;
+}
+ul.newsticker { /* that's your list */
+	position: relative;
+	left: 1000px;
+	font: bold 14px Arial;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color:black;
+}
+ul.newsticker li {
+	float: left; /* important: display inline gives incorrect results when you check for elem's width */
+	margin: auto;
+	padding: 0;
+	background: #fff;
+	background-color:black;
+	color: white;
+}
+ul.newsticker a {
+	white-space: nowrap;
+	padding: 0;
+	color: white;
+	font: bold 14px Arial;
+	margin: 0 50px 0 0;
+	height:30px;
+	text-decoration:none;
+} 
+ul.newsticker span {
+	margin: 0 10px 0 0;
+} 
+#bandeau{
+		width: 60%;
+		margin: -25% auto auto auto;
+		height: 30px;
+		background-color: black;
+}
+@media screen and (min-width:1600px)
+{
+	header{
+		background-color:black;
+		height: 40px;
+		width:70%;
+		margin: auto;
+	}
+	#redimensionner2
+	{
+	width:70%;
+	}
+	footer{
+		width:100%;
+		margin: auto;
+		font-family:Arial;
+		text-align: center;
+	}
+	hr{
+		color: white;
+		border:none; 
+		border-bottom: dashed 1px;
+	}
+
+	h1{
+		font-size:32px;
+		font-family: Arial;
+	}
+
+	h2{
+		text-align: center;
+		margin: 15px 0px 20px 0px;
+	}
+	
+	#blocs{
+		width: 60%;
+		margin: auto;
+	}
+	.bloc {
+		width : 30%;
+		height:600px;
+	}
+	.bloc > a {
+		background-color: black;
+	}
+	.bloc> p {
+		width: 75%;
+		text-align: center;
+		margin:auto;
+		font-size:16px;
+		font-family:arial;
+	}
+	#partage{
+		float: right;
+		width: 300px;
+	}
+	#ligne1{
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+	margin: 30px auto auto 0px;
+	position: relative;
+	}
+
+	#ligne2{
+		width: 100%;
+		display:flex;
+		justify-content: center;
+		position: relative;
+	}
+	a {
+		text-decoration:none; 
+		color: white;
+	}
+	.menu {
+		background: #000;
+		display: inline-block;
+		position: relative;
+		-webkit-transition: background .3s ease;
+		transition: background .3s ease;
+		font-size:18px;
+		float: right;
+		margin:  -60px 0px auto auto;
+		text-align: center;
+	}
+	.menu > a{
+		background-color: black;
+		border-style: solid; 
+		border-width:1px;
+		border-color: white;
+		padding: 5px 10px 5px 10px;
+		font-family: Arial;
+		font-size: 18px;
+		color: white;
+	}
+}
+@media screen and (max-width:1600px)
+{
+	header{
+		background-color:black;
+		height: 40px;
+		width:80%;
+		margin: auto;
+	}
+	#redimensionner2
+	{
+	width:80%;
+	}
+	#bandeau{
+		width: 80%;
+		margin: -30% auto auto auto;
+		height: 30px;
+		background-color: black;
+	}
+	footer{
+		width:100%;
+		margin: auto;
+		font-family:Arial;
+		text-align: center;
+	}
+	#blocs{
+		width: 80%;
+		margin: auto;
+	}
+	.bloc {
+			width : 300px;
+			height:600px;
+	}
+	.bloc > img {
+		width: 200px;
+	}
+	#ligne1{
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+	margin: 30px auto auto 0px;
+	position: relative;
+	}
+
+	#ligne2{
+		width: 100%;
+		display:flex;
+		justify-content: center;
+		position: relative;
+	}
+	.tickercontainer { /* the outer div with the black border */
+		border: 1px solid #000;
+		background: #000; 
+		width: 100%; 
+		height: 35px; 
+		margin: 0; 
+		padding: 0;
+		overflow: hidden; 
+	}
+	.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+		position: relative;
+		left: 10px;
+		top: 8px;
+		width: 1100px;
+		overflow: hidden;
+		height:30px;
+	}
+	#partage{
+		float: right;
+		width: 100px;
+	}
+}
+@media screen and (max-width:1200px)
+{
+	header{
+		background-color:black;
+		height: 40px;
+		width:100%;
+		margin: auto;
+	}
+	
+	footer{
+		width:100%;
+		margin: auto;
+		font-family:Arial;
+		text-align: center;
+	}
+	#blocs{
+		width: 100%;
+		margin: auto;
+	}
+	.bloc {
+			max-width : 25%;
+			height: auto;
+	}
+	#ligne1{
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+	margin: 30px auto auto 0px;
+	position: relative;
+	}
+
+	#ligne2{
+		width: 100%;
+		display:flex;
+		justify-content: center;
+		position: relative;
+	}
+	.tickercontainer { 
+		border: 1px solid #000;
+		background: #000; 
+		width: 100%; 
+		height: 35px; 
+		margin: 0; 
+		padding: 0;
+		overflow: hidden; 
+	}
+	.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+		position: relative;
+		left: 10px;
+		top: 8px;
+		width: 1100px;
+		overflow: hidden;
+		height:30px;
+	}
+	#redimensionner
+	{
+	width:150px;
+	}
+	#redimensionner2
+	{
+	width:100%;
+	}
+}
+
+@media all and (max-width: 800px)
+
+{
+	header{
+		background-color:black;
+		height: 40px;
+		width:100%;
+		margin: auto;
+	}
+	footer{
+		width:100%;
+		margin: auto;
+		font-family:Arial;
+		text-align: center;
+	}
+	footer > div {
+		font-size:10px;
+		float:center;
+	}
+	h1{
+	font-size:16px;
+	}
+    #redimensionner
+	{
+	width:150px;
+	}
+	#redimensionner2
+	{
+	width:100%;
+	}
+	#ligne1{
+	width: 100%;
+	display: block;
+	margin: auto;
+	margin: 30px auto auto 0px;
+	}
+	#bandeau{
+		width: 80%;
+		margin: -40% auto auto auto;
+		height: 30px;
+		background-color: black;
+	}
+	#ligne1 > .bloc{
+	margin: auto;
+	}
+	#ligne2{
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	#ligne2 > .bloc{
+		margin: auto;
+	}
+	.bloc {
+		max-width :100%;
+		height: auto;
+		margin: auto auto auto auto;
+	}
+	.bloc > p {
+	font-size: 14px;
+	}
+	.menu {
+		background: #000;
+		display: inline-block;
+		position: relative;
+		-webkit-transition: background .3s ease;
+		transition: background .3s ease;
+		font-size:16px;
+		float: right;
+		margin:  -25px 0px auto auto;
+		text-align: center;
+	}
+	.menu > a {
+	font-size: 14px;
+	}
+	
+	.bloc {
+			max-width :90%;
+			height: auto;
+			margin: auto auto auto auto;
+	}
+	h2{
+		text-align: center;
+		font-size: 18px;
+	}
+	#partage{
+		float: right;
+		width: 68px;
+		margin-top:10px;
+	}
+}
